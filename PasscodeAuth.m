@@ -1,5 +1,9 @@
 #import "PasscodeAuth.h"
+#if DEBUG
 #import "RCTUtils.h"
+#else
+#import <React/RCTUtils.h>
+#endif
 #import <LocalAuthentication/LocalAuthentication.h>
 
 @implementation PasscodeAuth
